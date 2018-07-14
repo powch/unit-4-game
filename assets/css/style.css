@@ -1,0 +1,22 @@
+#enemyBox {
+    background-color: red;
+}
+
+#playerBox {
+    background-color: blue;
+    color: white;
+}
+
+#actionBox {
+    background-color: black;
+    color: white;
+}
+
+#characterBox {
+    background-color: green;
+    color: white;
+}
+
+#logBox {
+    background-color: cyan;
+}
