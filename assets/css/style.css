@@ -1,3 +1,7 @@
+/* body {
+    background-color: black;
+} */
+
 #enemyBox {
     background-color: red;
 }
@@ -19,4 +23,14 @@
 
 #logBox {
     background-color: cyan;
+}
+
+#characterSelect img {
+    height: 100px;
+    width: 100px;
+    border: 3px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
 }
