@@ -56,11 +56,11 @@ var gameObj = {
   },
   enemySelector: function() {
     var port = this.characters.enemies;
-    $.each(port, function(key1, val1) {
-        
+    $.each(port, function(key, val) {
+      var newImg = $("<img>");
+      newImg.attr("src", val.pic);
+      $("#characterSelect").append(newImg);
     });
-    console.log(port);
   }
 };
-gameObj.playerSelect();
-gameObj.enemySelector();
+
