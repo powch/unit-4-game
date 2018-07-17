@@ -14,7 +14,7 @@ var gameObj = {
   characters: {
     players: {
         rey: "assets/images/rey.jpeg",
-        r2d2: "assets/images/r2d2.jpg",
+        artoo: "assets/images/r2d2.jpg",
         luke: "assets/images/luke.jpg",
         chewy: "assets/images/chewy.png"
     },
@@ -54,8 +54,10 @@ var gameObj = {
       var banner = $('<p>');
       newImg.attr('src', val);
       newImg.attr('value', key);
-      newImg.addClass('playerPic')
+      newDiv.addClass('charDiv');
+      newImg.addClass('playerPic');
       banner.addClass('picBanner');
+      banner.text(key);
       newDiv.append(newImg);
       newDiv.append(banner);
       $('#characterSelect').append(newDiv);

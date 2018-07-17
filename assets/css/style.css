@@ -38,3 +38,7 @@
 .picBanner::first-letter {
     text-transform: capitalize;
 }
+
+.charDiv {
+    display: inline-block;
+}
