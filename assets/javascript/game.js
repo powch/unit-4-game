@@ -49,18 +49,28 @@ var gameObj = {
   playerSelect: function() {
     var port = this.characters.players;
     $.each(port, function(key, val) {
+      var newDiv = $('<div>');
       var newImg = $('<img>');
+      var banner = $('<p>');
       newImg.attr('src', val);
-      $('#characterSelect').append(newImg);
+      newImg.attr('value', key);
+      newImg.addClass('playerPic')
+      banner.addClass('picBanner');
+      newDiv.append(newImg);
+      newDiv.append(banner);
+      $('#characterSelect').append(newDiv);
     });
   },
   enemySelector: function() {
     var port = this.characters.enemies;
     $.each(port, function(key, val) {
       var newImg = $("<img>");
-      newImg.attr("src", val.pic);
+      newImg.attr('src', val.pic);
+      newImg.attr('value', key);
       $("#characterSelect").append(newImg);
     });
   }
 };
+
+gameObj.playerSelect();
 
