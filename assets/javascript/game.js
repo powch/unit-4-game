@@ -18,6 +18,7 @@ var gameObj = {
   atk: 0,
   runningAtk: 0,
   counterAtk: 0,
+  wins: 0,
   characters: {
     rey: {
       hp: 120,
@@ -157,9 +158,10 @@ $('#atkBtn').on('click', function() {
     gameObj.runningEHP = gameObj.runningEHP - gameObj.runningAtk;
     gameObj.runningHP = gameObj.runningHP - gameObj.counterAtk;
     gameObj.atkSequence();
-    console.log(gameObj.runningHP);
-    console.log('-----------------');
-    console.log(gameObj.runningEHP);
+  }
+  if (gameObj.runningEHP <= 0) {
+    console.log('FOOBAR');
+
   }
 });
 
