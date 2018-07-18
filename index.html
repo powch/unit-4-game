@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-sm-12 text-center mb-3 p-3" id="characterBox">
                 <div class="row">
-                    <div class="col-sm-12"><h1 id="characterHeader">Choose your character</h1>
+                    <div class="col-sm-12 mb-3"><h1 id="characterHeader">Choose your character</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -23,30 +23,35 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 text-center mr-3 offset-sm-2" id="playerBox">
-                <div class="row">
+            <div class="col-sm-3 text-center mr-3 offset-sm-2 pt-3" id="playerBox">
+                <div class="row mb-1">
                     <div class="col-sm-12 text-center">
                         <img id="playerPortrait" src="http://fillmurray.com/200/200" alt="placeholder">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 text-center" id="playerHP">
-                        <p>progress bar</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-2 text-center" id="actionBox">
-                <button type="button" class="btn btn-light">Attack</button>
+                <button type="button" class="btn btn-light" id="atkBtn">Attack</button>
             </div>
             <div class="col-sm-3 text-center ml-3" id="enemyBox">
                 <div class="row">
-                    <div class="col-sm-12 text-center">
+                    <div class="col-sm-12 text-center pt-3 mb-1">
                          <img id="enemyPortrait" src="http://fillmurray.com/200/200" alt="placeholder">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 text-center" id="enemyHP">
-                        <p>progress bar</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
