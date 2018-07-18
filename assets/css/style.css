@@ -1,6 +1,6 @@
-/* body {
+body {
     background-color: black;
-} */
+}
 
 #enemyBox {
     background-color: red;
@@ -12,6 +12,10 @@
     width: 200px;
 }
 
+#atkPortrait {
+    height: 100px;
+}
+
 #playerBox {
     background-color: rgb(97, 194, 226);
     border-radius: 10px;
@@ -19,7 +23,7 @@
 }
 
 #actionBox {
-    background-color: black;
+    background-color: transparent;
     color: white;
 }
 
@@ -29,7 +33,7 @@
 }
 
 #logBox {
-    background-color: cyan;
+    background-color: grey;
 }
 
 .playerPic {
