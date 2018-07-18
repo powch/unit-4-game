@@ -29,6 +29,7 @@ body {
 
 #characterBox {
     background-color: grey;
+    height: 250px;
     color: white;
 }
 

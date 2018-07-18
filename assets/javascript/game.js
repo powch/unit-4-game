@@ -25,7 +25,7 @@ var gameObj = {
     rey: {
       hp: 110,
       atk: 8,
-      counterAtk: 30,
+      counterAtk: 28,
       pic: "assets/images/rey.jpeg"
     },
     rogerRoger: {
@@ -35,8 +35,8 @@ var gameObj = {
       pic: "assets/images/roger.png"
     },
     luke: {
-      hp: 120,
-      atk: 6,
+      hp: 140,
+      atk: 7,
       counterAtk: 14,
       pic: "assets/images/luke.jpg"
     },
@@ -187,9 +187,14 @@ $('#atkBtn').on('click', function() {
     }
   }
   if (gameObj.runningHP <= 0) {
-    var lose = confirm('YOU LOSE\nPress OK to try again');
+    var lose = confirm('YOU LOSE.\nPress OK to try again');
     if (lose === true) {
       location.reload();
+    } else {
+      var welp = setInterval(() => {
+        $('#characterHeader').text('Please refresh the page.\nThis is awkward.');
+        clearInterval(welp);
+      }, 5000);
     }
   } 
 });
