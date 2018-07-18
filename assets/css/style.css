@@ -31,6 +31,7 @@ body {
     background-color: grey;
     height: 250px;
     color: white;
+    border-radius: 10px;
 }
 
 #characterSelect {
@@ -40,6 +41,7 @@ body {
 #logBox {
     background-color: grey;
     height: 150px;
+    border-radius: 10px;
 }
 
 .playerPic {
