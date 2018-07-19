@@ -118,7 +118,7 @@ var gameObj = {
       this.runningEHP = this.characters.chewy.hp;
       this.counterAtk = this.characters.chewy.counterAtk;
     }
-    this.enemyVal = val;
+    this.enemyVal = val.toUpperCase();
   },
   updateHPBar: function() {
     var HP = this.playerHP;
@@ -166,7 +166,7 @@ $('#atkBtn').on('click', function() {
   }
   if (gameObj.runningEHP <= 0) {
     $('#enemyLog').empty();
-    $('#playerLog').text("You've defeated " + gameObj.enemyVal + "!");
+    $('#playerLog').text('You have defeated ' + gameObj.enemyVal + '!');
     $('#enemyPortrait').attr('src', 'assets/images/empire.png');
     $('#enemyBar').attr('style', 'width: 100%');
     $('#enemyBar').text('');
@@ -180,7 +180,7 @@ $('#atkBtn').on('click', function() {
         location.reload();
       } else {
         var welp = setInterval(() => {
-          $('#characterHeader').text('Please refresh the page.\nThis is awkward.');
+          $('#characterHeader').text('Please refresh the page. This is awkward.');
           clearInterval(welp);
         }, 5000);
       }
@@ -192,7 +192,7 @@ $('#atkBtn').on('click', function() {
       location.reload();
     } else {
       var welp = setInterval(() => {
-        $('#characterHeader').text('Please refresh the page.\nThis is awkward.');
+        $('#characterHeader').text('Please refresh the page. This is awkward.');
         clearInterval(welp);
       }, 5000);
     }
