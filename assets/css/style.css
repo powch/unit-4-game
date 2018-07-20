@@ -24,6 +24,10 @@ body {
     color: white;
 }
 
+#characterHeader {
+    color: yellow;
+}
+
 #actionBox {
     background-color: transparent;
 }
