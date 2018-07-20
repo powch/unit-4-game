@@ -60,7 +60,7 @@ var gameObj = {
       newImg.addClass('playerPic');
       banner.addClass('picBanner');
       banner.text(key);
-      hp.text(val.hp);
+      hp.text(val.hp + ' HP');
       hp.addClass('playerHP');
       newDiv.append(newImg);
       newDiv.append(banner);
@@ -143,6 +143,7 @@ $('.charDiv').on('click', function() {
     return;
   } else if (gameObj.playerChosen === false) {
     $('#characterHeader').text('Choose an enemy!');
+    $('.playerPic').attr('style', 'border-color: red');
     gameObj.playerSelect(val);
     $(this).hide();
     gameObj.playerChosen = true;

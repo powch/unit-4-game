@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: 'Russo One', sans-serif;
 }
 
 #enemyBox {
@@ -60,7 +61,7 @@ body {
 
 .playerHP {
     position: relative;
-    left: 18px;
+    left: 15px;
     bottom: 70px;
     font-weight: bolder;
     color: white;
